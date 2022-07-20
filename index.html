@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice For Class Test 02</title>
+    <link rel="shortcut icon" href="images/K-fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="myDIV">
+        <ul>
+            <li class="navbtn active"><a href="#home">Home</a></li>
+            <li class="navbtn"><a href="#about">About</a></li>
+            <li class="navbtn"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    </nav>
+
+    <section id="home">
+        <div class="h-container">
+            <div class="parent-left">
+                <h1 style="color: #4c5657;">Welcome to the world of</h1>
+                <h1>Kasfiya Rab Bin Noor Upoma</h1>
+                <div class="wrapper">
+                    <div class="static-txt">I'm a</div>
+                    <ul class="dynamic-txts">
+                        <li><span>Super Fool Student</span></li>
+                        <li><span>Beautiful Little Monkey</span></li>
+                        <li><span>Absent Minded Professor</span></li>
+                        <li><span>Liability to My Parents</span></li>
+                    </ul>
+                </div><br>
+                <a href="#" class="btn">Hire Me</a>
+            </div>
+            <div class="img">
+                <img src="images/me.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h1>About</h1>
+        <p>Hey there! I am Kasfiya, an accommodating versatile individual with progressing skills in field of Front-end
+            Web development. Currently I am student of Shyamoli Ideal Polytechnic Institute, searching for an internship
+            on web design. Here I am compleating a
+            four years Diploma In Engineering course on Computer Science.
+            <br><br>
+            I am a dedicated and hardworking person. I love to learn about new technologies everyday. I am familiar with
+            Html,
+            CSS, React, Java Script, Data Structures, Bootstrap, Tailwind, VS Code & Git. Besides, I have basic skills of
+            using MS Word, Powerpoint and Excel. Still I am a fresher. Though I am
+            working hard to cherish my dream and looking forward to grow success by harvesting
+            my own skills..
+        </p>
+    </section>
+
+    <section id="contact">
+        <div class="container">  
+            <form id="cont" action="" method="post">
+              <h3>Quick Contact</h3>
+              <h4>Contact us today, and get reply with in 24 hours!</h4><br>
+              <label for="name">Your Name</label><br>
+              <input type="text" name="name" id="name" placeholder="Enter Your Name"><br><br>
+          
+              <label for="Email">Your Email</label><br>
+              <input type="email" name="Email" id="Email" placeholder="Enter Your Email"><br><br>
+          
+              <label for="Adfress">Your Address</label><br>
+              <input type="text" name="Address" id="Address" placeholder="Enter Your Address"><br><br>
+              <label for="message">Your Message</label><br>
+              <textarea name="message" id="message" placeholder="Enter Your Message"></textarea><br><br>
+          
+              <button type="submit" class="contact">Submit</button>
+            </form>           
+          </div>
+      </section>
+
+      <footer>Designed By Kasfiya &COPY;</footer>
+
+      <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("navbtn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+      </script>
+</body>
+
+</html>

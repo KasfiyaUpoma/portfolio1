@@ -208,8 +208,8 @@ img:hover {
 /* Contact */
 #contact{
     display:flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 100vh;
     margin: 0px 30px 0px 280px;
 }
@@ -615,14 +615,18 @@ footer{
     }
 
     nav ul li a {
-        border: none;
         font-size: 18px;
-        width: 60%;
         margin-right: 1px;
+        display: block;
+        width:inherit;
     }
     nav ul li{
+      display: flex;
+      justify-content: center;
+      align-items: center;
       border: none;
-      margin-right: 2px;
+      margin-right: 3px;
+      display: inline-block;
     }
 
     nav {

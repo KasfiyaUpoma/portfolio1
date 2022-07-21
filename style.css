@@ -92,7 +92,7 @@ li:hover:not(.active)>a{
 }
 /* Home */
 .h-container {
-    margin: 0px 30px 0px 290px;
+    margin: 0px 30px 0px 250px;
     display: grid;
     grid-template-columns: 60% 40%;
     align-items: center;
@@ -187,7 +187,7 @@ img:hover {
 }
 /* About */
 #about{
-    margin: 0px 35px 0px 280px;
+    margin: 0px 30px 0px 290px;
     display: flex;
     flex-direction: column;
     /*height: 100vh;*/
@@ -206,6 +206,64 @@ img:hover {
     border-left: 14px solid #A27B5C;
     padding: 10px;
     width: 300px;
+}
+#projects{
+  margin: 0px 30px 0px 290px;
+}
+ #projects>h1 {
+   font-size: 25px;
+   margin: 10px 10px 25px 0px;
+   border-left: 7px solid #A27B5C;
+   padding: 10px;
+   width: 300px;
+ }
+.proCard{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 5px;
+}
+ .flip-card {
+  background-color: transparent;
+  height: 450px;
+  width: 95%;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .progress{
@@ -231,7 +289,7 @@ img:hover {
     justify-content: center;
     /*height: 100vh;*/
     padding: 65px 0px;
-    margin: 0px 30px 0px 280px;
+    margin: 30px 30px 0px 280px;
 }
 #contact h3{
     color: #FC6D6D;
@@ -370,7 +428,7 @@ footer{
     nav{
         width: 220px;
     }
-    .h-container,#about,#contact{
+    .h-container,#about,#contact,#projects{
         margin-left: 250px;
     }
 }
@@ -534,7 +592,7 @@ footer{
     nav {
         width: 160px;
     }
-    .h-container, #about ,#contact{
+    .h-container, #about ,#contact,#projects{
         margin-left: 182px;
     }
 }
@@ -548,7 +606,7 @@ footer{
         font-size: 18px;
     }
 
-    .h-container , #about,#contact{
+    .h-container , #about,#contact,#projects{
         margin-left: 165px;
     }
 
@@ -570,7 +628,7 @@ footer{
         font-size: 18px;
     }
 
-    .h-container, #about ,#contact{
+    .h-container, #about ,#contact,#projects{
         margin-left: 170px;
     }
     .h-container h1{
@@ -633,10 +691,12 @@ footer{
     footer{
         margin-left: 0;
     }
+    nav ul{
+      margin-left: 2px;
+    }
 
     nav ul li a {
-        font-size: 18px;
-        margin-right: 1px;
+        font-size: 17px;
         display: block;
         width:inherit;
     }
@@ -651,19 +711,39 @@ footer{
 
     nav {
         width: 100vw;
-        height: 45px;
+        height: 47px;
         display: grid;
         justify-content: center;
         z-index: 1;
         border-radius: 0 0 12px 12px;
     }
+   .proCard{
+     grid-template-columns: 100%;
+     justify-content: center;
+     align-items: center;
+   }
+  .flip-card{
+    width: 100%;
+  }
+   #first{
+     border-radius: 0 0 0 12px;
+   }
+  #last{
+    border-radius: 0 0 12px 0;
+  }
+   .btn{
+     font-size: 20px;
+     display: block;
+     width: 87%;
+     margin-top: 45px;
+   }
     
     input, textarea{
     width: 95.8%;
     }
     
-    .h-container , #about,#contact{
-        margin: 0px 30px;
+    .h-container , #about,#contact, #projects{
+        margin: 0px 20px;
     }
 
     .h-container h1 {

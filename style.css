@@ -209,6 +209,7 @@ img:hover {
 }
 #projects{
   margin: 0px 30px 0px 290px;
+  padding-top: 60px;
 }
  #projects>h1 {
    font-size: 25px;

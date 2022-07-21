@@ -221,7 +221,7 @@ img:hover {
 .proCard{
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-gap: 5px;
+  grid-gap: 15px;
 }
  .flip-card {
   background-color: transparent;
@@ -364,6 +364,9 @@ footer{
     color: #2c3639;
     margin-left: 110px;
 }
+
+
+
 /* Animations */
 @keyframes fade-in {
     50% {

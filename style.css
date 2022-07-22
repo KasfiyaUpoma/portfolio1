@@ -212,9 +212,9 @@ img:hover {
   padding-top: 2px;
 }
  #projects>h1 {
-   font-size: 25px;
+   font-size: 60px;
    margin: 10px 10px 25px 0px;
-   border-left: 7px solid #A27B5C;
+   border-left: 14px solid #A27B5C;
    padding: 10px;
    width: 300px;
  }
@@ -225,7 +225,7 @@ img:hover {
 }
  .flip-card {
   background-color: transparent;
-  height: 450px;
+  height: 490px;
   width: 95%;
   perspective: 1000px;
 }

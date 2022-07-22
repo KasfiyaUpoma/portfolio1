@@ -358,12 +358,40 @@ label{
 /* Footer */
 footer{
     width: 100vw;
-    padding: 6px;
+    padding: 8px;
     text-align: center;
     background-color: #e0ac84;
     color: #2c3639;
     margin-left: 110px;
 }
+.fa-brands{
+  text-decoration: none;
+  color: #2c3639;
+  font-size: 22px;
+  padding: 2px;
+  border: 2px solid #2c3639;
+  text-align: center;
+  transition: 1.5s;
+}
+.fa-facebook:hover{
+  background: #3B5998;
+  color: white;
+  border:2px double navy;
+  border-radius: 20%;
+} 
+.fa-github:hover{
+  background: #2c3639;
+  color: white;
+  border:2px double black;
+  border-radius: 20%;
+}
+.fa-instagram:hover{
+  background: deeppink;
+  color: white;
+  border:2px double purple;
+  border-radius: 20%;
+}
+
 
 
 

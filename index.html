@@ -88,7 +88,7 @@
   <div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front">
-        <img src="images/p1.jpg" alt="Avatar" style="width:100%;height:490px;">
+        <img src="images/p1.jpg" alt="Avatar" style="width:100%;height:520px;">
       </div>
       <div class="flip-card-back">
         <h1>Bootstrap Project</h1>
@@ -102,7 +102,7 @@
   <div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front">
-        <img src="images/p2.jpg" alt="Avatar" style="width:100%;height:490px;">
+        <img src="images/p2.jpg" alt="Avatar" style="width:100%;height:520px;">
       </div>
       <div class="flip-card-back">
         <h1>JavaScript Project</h1>
@@ -115,7 +115,7 @@
   <div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front">
-        <img src="images/p3.jpg" alt="Avatar" style="width:100%;height:490px;">
+        <img src="images/p3.jpg" alt="Avatar" style="width:100%;height:520px;">
       </div>
       <div class="flip-card-back">
         <h1>Responsive & Animated HTML-CSS Project</h1>
@@ -131,11 +131,12 @@
 
     <section id="contact">
         <div class="container">  
-            <form id="cont" action="" method="post">
+            <!--<form id="cont" action="" method="post">-->
+            <form action="https://formspree.io/f/mjvlnayy" method="POST" id="my-form">
               <h3>Quick Contact</h3>
               <h4>Contact us today, and get reply with in 24 hours!</h4><br>
               <label for="name">Your Name</label><br>
-              <input type="text" name="name" id="name" placeholder="Enter Your Name"><br><br>
+              <input type="text" name="Name" id="name" placeholder="Enter Your Name"><br><br>
           
               <label for="Email">Your Email</label><br>
               <input type="email" name="Email" id="Email" placeholder="Enter Your Email"><br><br>
@@ -143,10 +144,10 @@
               <label for="Adfress">Your Address</label><br>
               <input type="text" name="Address" id="Address" placeholder="Enter Your Address"><br><br>
               <label for="message">Your Message</label><br>
-              <textarea name="message" id="message" placeholder="Enter Your Message"></textarea><br><br>
+              <textarea name="Message" id="message" placeholder="Enter Your Message"></textarea><br><br>
           
               <button type="submit" class="contact">Submit</button>
-            </form>           
+            </form>        
           </div>
       </section>
 
@@ -169,6 +170,40 @@
           });
         }
       </script>
+      <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+      <script>
+  /* paste this line in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/     
+  formbutton("create", {
+    action: "https://formspree.io/f/mjvlnayy",
+    title: "How can we help?",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "gray"
+      },
+      button: {
+        backgroundColor: "gray"
+      }
+    }
+  });
+</script>
 </body>
 
 </html>

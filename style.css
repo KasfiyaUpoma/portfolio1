@@ -92,7 +92,7 @@ li:hover:not(.active)>a{
 }
 /* Home */
 .h-container {
-    margin: 30px 30px 0px 250px;
+    margin: 30px 30px 0px 290px;
     display: grid;
     grid-template-columns: 60% 40%;
     align-items: center;
@@ -378,21 +378,18 @@ footer{
   color: white;
   border:2px double navy;
   border-radius: 20%;
-  transform: rotate(360deg);
 } 
 .fa-github:hover{
   background: #2c3639;
   color: white;
   border:2px double black;
   border-radius: 20%;
-  transform: rotate(360deg);
 }
 .fa-instagram:hover{
   background-image: linear-gradient(#4c68d7, #cd486b, #fbad50, #fccc63, #bc2a8d, #8a3ab9);
   color: white;
   border:2px double purple;
   border-radius: 20%;
-  transform: rotate(360deg);
 }
 
 

@@ -378,18 +378,21 @@ footer{
   color: white;
   border:2px double navy;
   border-radius: 20%;
+  transform: rotate(360deg);
 } 
 .fa-github:hover{
   background: #2c3639;
   color: white;
   border:2px double black;
   border-radius: 20%;
+  transform: rotate(360deg);
 }
 .fa-instagram:hover{
   background: deeppink;
   color: white;
   border:2px double purple;
   border-radius: 20%;
+  transform: rotate(360deg);
 }
 
 

@@ -507,7 +507,7 @@ footer{
     #about p{
         font-size: 20px;
     }
-    #about h1{
+    #about h1,#projects>h1{
         font-size: 40px;
         border-left: 8px solid #A27B5C;
     }
@@ -561,7 +561,7 @@ footer{
     #about p{
         line-height: 25px;
     }
-    #about h1{
+    #about h1, #projects>h1{
         font-size: 30px;
     }
 }
@@ -582,7 +582,7 @@ footer{
     .h-container , #about,#contact{
         margin-left: 240px;
     }
-    #about h1{
+    #about h1, #projects>h1{
         font-size: 30px;
     }
     
@@ -614,7 +614,7 @@ footer{
     #about p{
         font-size: 16px;
     }
-    #about h1{
+    #about h1,#projects>h1{
         font-size: 25px;
         border-left: 6px solid #A27B5C;
     }
@@ -865,7 +865,7 @@ footer{
         font-size: 20px;
         line-height: 25px;
     }
-    #about h1{
+    #about h1, #projects>h1{
         font-size: 27px;
     }
 }
@@ -907,7 +907,7 @@ footer{
     #about p{
         font-size: 18px;
     }
-    #about h1{
+    #about h1, #projects>h1{
         font-size: 20px;
     }
 }

@@ -181,9 +181,21 @@ img:hover {
     border-radius: 12px;
     transition: 2s;
 }
-.btn:hover{
+.btn:hover,.btn1:hover{
     background-image: linear-gradient(to right center);
     box-shadow: 2px 2px 6px gray;
+}
+.btn1 {
+  display: block;
+  text-decoration: none;
+  background-image: linear-gradient(to right, #2c3639 0%, #4c5657 51%, #2c3639 100%);
+  font-size: 24px;
+  color: #DCD7D9;
+  padding: 8px 25px;
+  text-align: center;
+  margin-top: 25px;
+  border-radius: 12px;
+  transition: 2s;
 }
 /* About */
 #about{
